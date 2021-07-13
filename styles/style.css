@@ -1,0 +1,49 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* common styles or utilities*/
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    background-color: #FFFFFF;
+    padding: 30px;
+    width: 870px;
+    border-radius: 5px;
+    margin-top: 21px;
+}
+
+
+
+
+/* Media Qureies-------------------------------- */
+/* Mobile devices */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .latest-courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player,.blog,.course{
+        flex-direction: column;
+    }
+    
+}
+/* Tablet devices */
+@media only screen and (min-width: 688px)and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .latest-courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+
