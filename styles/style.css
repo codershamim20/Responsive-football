@@ -12,25 +12,32 @@ main{
     align-items: center;
 }
 .container{
-    background: #2D25A0;
-    width: 100%;
+    background-color: #2D25A0;
+    width:100% ;
+    align-items: center;
+    overflow:hidden;
 }
 /* top-section styles */
 .top-sections{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); 
     column-gap: 100px;
     padding: 50px 0px 80px;
-    margin-left: 90px;
+    margin-left: 10%;
     margin-bottom: 0px;
     width: 1100px;
-    height: 505px;
+    
+}
+.top-section-info{
+    width:485px;
+    height:300px;
 }
 .top-section-title{
-    font-size: 64px;
+    font-size: 60px;
     color: #FFFFFF;
     font-weight: 700;
     margin-bottom: 0 ;
+    align-items: center;
 }
 .top-button,.h-button{
     width: 168px;
@@ -67,9 +74,13 @@ main{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 100px;
-    padding: 100px 80px;
+    padding: 50px 80px;
     margin-left: 90px;
     width: 1100px;
+}
+.h-section-info{
+width:480px;
+height:309px;
 }
 .h-section-title{
     color: black;
@@ -80,7 +91,17 @@ main{
     text-decoration: none;
     color: white;
 }
-
+/* trophy styles */
+/* sponsor section styles */
+.trophy-title,.sponsor-title{
+    color: black;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+.trophy-img, .sponsor-img {
+    width: 1500px;
+}
 /* footer-styles */
 footer{
     display: flex;
@@ -101,18 +122,18 @@ footer{
 /* Mobile devices */
 @media only screen and (max-width:688px) {
     .container{
-        width: 100%;
+        width: 90%;
     }
-    .top-sections,.players{
+    .top-sections,.players,.h-section{
         grid-template-columns: repeat(1, 1fr);
     }
 }
 /* Tablet devices */
 @media only screen and (min-width: 688px)and (max-width:992px){
     .container{
-        width: 100%;
+        width: 90%;
     }
-    .top-sections,.players{
+    .top-sections,.players,.h-section{
         grid-template-columns: repeat(2, 1fr);
     }
     
