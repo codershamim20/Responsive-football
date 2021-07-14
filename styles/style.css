@@ -196,7 +196,7 @@ footer{
     .h-section-info{
         width:300px;
         height:340px;
-        margin-left: 300px;
+        margin-left: 400px;
         }
     .h-section-title{
             color: black;
@@ -205,9 +205,8 @@ footer{
             align-items: center;
         }  
     .h-section-image{
-        width:250px;
-        margin-left: 250px;
-        margin-left: 150px;
+        width:150px;
+        margin-left: 300px;
     }      
 }
 /* Tablet devices */
