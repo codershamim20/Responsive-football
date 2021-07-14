@@ -46,11 +46,32 @@ main{
     color: #FFFFFF;
     padding: 10px;
     text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
 }
 .top-button a{
     text-decoration: none;
     color: white;
+    cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
+.top-button a:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .top-button:hover a {
+    padding-right: 45px;
+  }
+  .top-button:hover a:after {
+    opacity: 1;
+    right: 0;
+  }
 /* all players styles */
 .players{
     display: grid;
@@ -90,7 +111,26 @@ height:309px;
 .h-button a{
     text-decoration: none;
     color: white;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
 }
+.h-button a:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .h-button:hover a {
+    padding-right: 45px;
+  }
+  .h-button:hover a:after {
+    opacity: 1;
+    right: 0;
+  }
 /* trophy styles */
 /* sponsor section styles */
 .trophy-title,.sponsor-title{
@@ -121,17 +161,25 @@ footer{
 /* Media Qureies-------------------------------- */
 /* Mobile devices */
 @media only screen and (max-width:688px) {
+    body{
+        font-size: 24px;
+    }
+    main{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
     .container{
-        width: 90%;
+        width: 70%;
     }
     .top-sections,.players,.h-section{
         grid-template-columns: repeat(1, 1fr);
+        width:80%;
     }
 }
 /* Tablet devices */
 @media only screen and (min-width: 688px)and (max-width:992px){
     .container{
-        width: 90%;
+        width: 70%;
     }
     .top-sections,.players,.h-section{
         grid-template-columns: repeat(2, 1fr);
