@@ -53,9 +53,9 @@ main{
     text-decoration: none;
     color: white;
     cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
 }
 .top-button a:after {
     content: '\00bb';
@@ -161,30 +161,91 @@ footer{
 /* Media Qureies-------------------------------- */
 /* Mobile devices */
 @media only screen and (max-width:688px) {
-    body{
-        font-size: 24px;
+    .top-section-info{
+        width: 350px;
+        height:200px;
     }
-    main{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
+    .top-section-title{
+        font-size: 35px;
+        color: #FFFFFF;
+        font-weight: 500;
+        margin-bottom: 0 ;
+        align-items: center;
+    } 
+    .top-section-image{
+        width: 50%;
+    }   
     .container{
-        width: 70%;
+        width: 90%;
     }
     .top-sections,.players,.h-section{
         grid-template-columns: repeat(1, 1fr);
-        width:80%;
     }
+    .trophy-img, .sponsor-img {
+        width: 700px;
+    }
+    .h-section-info{
+        width:350px;
+        height:340px;
+        margin-left: 300px;
+        }
+    .h-section-title{
+            color: black;
+            font-size: 35px;
+            font-weight: 500;
+            align-items: center;
+        }  
+    .h-section-image{
+        width:300px;
+        margin-left: 300px;
+    }      
 }
 /* Tablet devices */
 @media only screen and (min-width: 688px)and (max-width:992px){
     .container{
-        width: 70%;
+        width: 100%;
     }
-    .top-sections,.players,.h-section{
+    .top-sections{
+        display: grid;
+        grid-template-columns: 170px 170px;
+        margin-left: 5%;
+    }
+    .top-section-info{
+        width: 250px;
+        height:200px;
+    }
+    .top-section-title{
+        font-size: 45px;
+        color: #FFFFFF;
+        font-weight: 500;
+        margin-bottom: 0 ;
+        align-items: center;
+    } 
+    .top-section-image{
+        width: 200px;
+    }
+    .players{
         grid-template-columns: repeat(2, 1fr);
     }
-    
+    .h-section{
+        display: grid;
+        grid-template-columns: 200px 170px;
+        margin-left: 15%;
+    }
+    .h-section-info{
+        width:300px;
+        height:300px;
+        }
+    .h-section-title{
+        font-size: 32px;
+        font-weight: 500;
+    }
+    .h-section-image{
+        width: 200px;
+    }
+    .trophy-img, .sponsor-img {
+        width: 1000px;
+    }
 }
 
 
